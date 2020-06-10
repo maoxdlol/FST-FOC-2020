@@ -42,14 +42,15 @@ body {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    padding: 0 25px;
 }
 
 .banner {
     max-height:40vh;
     min-width: 80vw;
-    max-width: 100vw;
-    
+    max-width: 100%;
 }
+
 
 .colie {
     background: rgb(75,67,221);
@@ -180,6 +181,6 @@ body {
     display: table-cell;
     vertical-align: middle;
     font-weight: 900;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
-
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
 }
