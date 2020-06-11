@@ -1,99 +1,122 @@
 * {
-    padding: 0;
+    padding: 0; /* always good to blanket set this */
     margin:0;
     text-decoration: none;
     box-sizing: border-box;
 }
 
 .sidebar {
-    position: fixed;
-    width:200px;
-    left: -200px;
-    height: 100%;
+    position: fixed; /**/
+    width:40vw; /* set width */
+    left: -40vw; /* = negative width */
+    height: 100%; /**/
     background-color: burlywood;
-    transition: all 0.5s ease;
+    transition: all 0.5s ease; /* on any element change, transition 0.5s */
     border-right: 2px solid rgb(59, 58, 58);
     font-weight: 1000;
 }
 
 .sidebar header {
     font-size: 20px;
-    height: 150px;
-    line-height: 150px;
-    text-align: center;
+    height: 25vh; /**/
+    line-height: 25vh; /* center text vert */
+    text-align: center; /**/
     background-color: brown;
     color: white;
     border-bottom: 2px solid black;
 }
 
+
 .sidebar ul a {
-    display: block;
-    width: 100%;
-    height: 100%;
+    display: block; /**/
+    width: 100%;/**/
+    height: 100%;/* 100% of li */
     color: black;
-    box-sizing: border-box;
-    line-height: 70px;
+    line-height: 15vh;/* center */
     border-top: 0.5px solid rgb(194, 194, 194);
     border-bottom: 1px solid black;
-    transition: 0.5s;
-}
-
-.sidebar ul a:hover {
-    background-color: indianred;
-}
-
-#check {
-    display: none;
-}
-
-label #ham, label #cancel {
-    position: absolute;
-    
-    cursor: pointer;
-    width: 30px;
-    height: 30px;
-    position: fixed;
-    top: 60px;
-}
-
-label #ham {
-    left: 20px;
-    transition: all 0.5s;
-    z-index: 999;
-
-}
-
-label #cancel {
-    z-index: 999;
-    left: -190px;
-    transition: all 0.5s ease;
-    
-}
-
-#check:checked ~ .sidebar {
-    left:0;
-}
-
-#check:checked ~ label #ham {
-    opacity: 0;
-    left: 200px;
-    pointer-events: none;
-}
-
-#check:checked ~ label #cancel {
-    left: 160px;
-}
-
-.mainbody {
-    transition: all 0.5s;
-}
-
-#check:checked ~ .mainbody {
-    margin-left: 200px;
+    transition: 0.5s; /* all transition timings same */
 }
 
 li {
     text-align: center;
 }
 
+/* button hover */
+.sidebar ul a:hover {
+    background-color: indianred;
+} 
 
+/* poof checkbox */
+#check {
+    display: none;
+}
+
+/* menu toggle/close buttons */
+label #ham, label #cancel {
+    cursor: pointer;/**/
+    width: 30px;/**/
+    height: 30px;/**/
+    position: fixed;/* for menu to follow u, absolute if menu at top only */
+    z-index: 999; /**/
+}
+
+/* open menu btn */
+label #ham {
+    top: 30px;/* dist of button from top*/
+    left: 20px; /* position of menu btn when CLOSED */
+    transition: all 0.5s; /**/ 
+}
+
+label #cancel {
+    left: 20px; 
+    top: -100px; /* close button on left of viewport: HIDDEN */
+    transition: all 0.5s ease;
+}
+
+#check:checked ~ .sidebar {
+    left:0; /* aligh sidebar to left screen */
+}
+
+#check:checked ~ label #ham {
+    opacity: 0; /* open menu btn disappear */
+    left:220px;
+    pointer-events: none; /* prevent clicking of btn*/
+}
+
+#check:checked ~ label #cancel {
+    top: 30px;/* dist of button from top*/
+}
+
+/* shift content right on sidebar open */
+.mainbody {
+    transition: all 0.5s;
+}
+
+#check:checked ~ .mainbody {
+    margin-left: 40vw;
+}
+
+
+
+
+/* basic html
+<input type="checkbox" id="check">
+    <label for="check">
+      <i class="fas fa-bars" id="btn"></i>
+      <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+    <header>My App</header>
+  <ul>
+<li><a href="#"><i class="fas fa-qrcode"></i>Dashboard</a></li>
+<li><a href="#"><i class="fas fa-link"></i>Shortcuts</a></li>
+<li><a href="#"><i class="fas fa-stream"></i>Overview</a></li>
+<li><a href="#"><i class="fas fa-calendar-week"></i>Events</a></li>
+<li><a href="#"><i class="far fa-question-circle"></i>About</a></li>
+<li><a href="#"><i class="fas fa-sliders-h"></i>Services</a></li>
+<li><a href="#"><i class="far fa-envelope"></i>Contact</a></li>
+</ul>
+</div>
+<section></section>
+*/

@@ -59,8 +59,8 @@ body {
 
 .colieicon {
     position: absolute;
-    bottom:700px;
-    left: 56vw; 
+    bottom:70%;
+    left: 56%; 
 }
 
 .nella {
@@ -70,8 +70,8 @@ body {
 
 .nellaicon {
     position: absolute;
-    bottom:200px;
-    left: 67vw; 
+    bottom:20%;
+    left: 67%; 
 }
 
 .vibria {
@@ -81,8 +81,8 @@ body {
 
 .vibriaicon {
     position: absolute;
-    bottom:190px;
-    left: 18vw; 
+    bottom:18%;
+    left: 18%; 
 }
 
 .listerio {
@@ -93,8 +93,8 @@ body {
 
 .listerioicon {
     position: absolute;
-    bottom:550px;
-    left: 23vw; 
+    bottom:60%;
+    left: 23%; 
 }
 
 .icon {
@@ -160,7 +160,7 @@ body {
 
 
 .uncharted {
-    max-height: 100px;
+    min-height: 250px;
     max-width: 100%
 }
 
