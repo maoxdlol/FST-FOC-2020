@@ -4,94 +4,83 @@
         <title>FST FOC 2020</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="static/style-main.css">
+        <link rel="stylesheet" href="static/sidebar.css">
     </head>
 
-    <body>
-        <div class='header-wrapper'>
-        <div class='header'>
-            <div class='text-buttons'>
-            <a href="about.html" class='button'>
-                <div class='button-wrapper'>
-                    <div class='button-txt'>About</div>
-                </div>
-            </a>
-            <a href='scoreboard.html' class='button'>
-                    <div class='button-wrapper'>
-                        <div class='button-txt'>Scoreboard</div>
-                    </div>
-            </a>
-            </div>
-            
-            <a href="index.html" class='uc'>
-                <div><img src="static/images/uncharted.png" alt="" class='uncharted'></div>
-            </a>
-            
-            <div class='text-buttons'>
-            <a href="timeline.html" class='button'>
-                <div class='button-wrapper'>
-                    <div class='button-txt'>Timeline</div>
-                </div>
-            </a>
+<body>
 
-            <a href="gallery.html" class='button'>
-                <div class='button-wrapper'>
-                    <div class='button-txt'>Gallery</div>
-                </div>
+    <input type="checkbox" id='check'>
+    <label for="check">
+        <img src="static/images/hamburg.png" id="ham">
+        <img src="static/images/x.png" id="cancel">
+    </label>
+    <div class="sidebar">
+        <header>MENU</header>
+        <ul>
+            <li><a href="index.html"><span>Home</span></a></li>
+            <li><a href="about.html"><span>About</span></a></li>
+            <li><a href="scoreboard.html"><span>Scoreboard</span></a></li>
+            <li><a href="activities.html"><span>Activities</span></a></li>
+            <li><a href="gallery.html"><span>Gallery</span></a></li>
+        </ul>
+    </div>
+
+<div class="mainbody">
+    <div class='header-wrapper'>
+        <div class='header'>
+            <a href="index.html" class='uc'>
+                <img src="static/images/uncharted.png" alt="" class='uncharted'>
             </a>
-            </div>
         </div>
     </div>
 
-        <div class='bannerstart'>
+    <div class='bannerstart'>
         <div class='map-wrapper'>
             <img src="static/images/island.png" alt="no" class='map'>
+
             <a href="colie.html">
                 <img src="static/images/colie.PNG" alt="no" class='colieicon icon'>
             </a>
+
             <a href="nella.html">
                 <img src="static/images/nella.PNG" alt="no" class='nellaicon icon'>
             </a>
+
             <a href="vibria.html">
                 <img src="static/images/vibria.PNG" alt="no" class='vibriaicon icon'>
             </a>
+
             <a href="listerio.html">
                 <img src="static/images/listerio.PNG" alt="no" class='listerioicon icon'>
             </a>
         </div>
-
-
         
         <div class='banner-wrapper colie'>
             <a href="colie.html">
-            <div class='img-wrapper'>
                 <img src="static/images/coliebanner.png" alt="s" class='banner'>
-            </div>
             </a>
         </div>
 
         <div class='banner-wrapper nella'>
-            <a href="nella.html">
-            <div class='img-wrapper'>
+            <a href="nella.html">        
                 <img src="static/images/nellabanner.png" alt="s" class='banner'>
-            </div>
             </a>
         </div>
 
         <div class='banner-wrapper vibria'>
-            <a href="vibria.html">
-            <div class='img-wrapper'>
-                <img src="static/images/vibriabanner.png" alt="s" class='banner'>
-            </div>
+            <a href="vibria.html">            
+                <img src="static/images/vibriabanner.png" alt="s" class='banner'>         
             </a>
         </div>
 
         <div class='banner-wrapper listerio'>
             <a href="vibria.html">
-            <div class='img-wrapper'>
                 <img src="static/images/listeriobanner.png" alt="s" class='banner'>
-            </div>
             </a>
         </div>
     </div>
-    </body>
+
+</div>
+
+</body>
 </html>

@@ -4,42 +4,36 @@
         <title>FST FOC 2020</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="static/style-main.css">
+        <link rel="stylesheet" href="static/sidebar.css">
     </head>
 
-    <body>
-        <div class='header-wrapper'>
-        <div class='header'>
-            <div class='text-buttons'>
-            <a href="about.html" class='button'>
-                <div class='button-wrapper'>
-                    <div class='button-txt'>About</div>
-                </div>
-            </a>
-            <a href='scoreboard.html' class='button'>
-                    <div class='button-wrapper'>
-                        <div class='button-txt'>Scoreboard</div>
-                    </div>
-            </a>
-            </div>
-            
-            <a href="index.html" class='uc'>
-                <div><img src="static/images/uncharted.png" alt="" class='uncharted'></div>
-            </a>
-            
-            <div class='text-buttons'>
-            <a href="timeline.html" class='button'>
-                <div class='button-wrapper'>
-                    <div class='button-txt'>Timeline</div>
-                </div>
-            </a>
+<body>
 
-            <a href="gallery.html" class='button'>
-                <div class='button-wrapper'>
-                    <div class='button-txt'>Gallery</div>
-                </div>
+    <input type="checkbox" id='check'>
+    <label for="check">
+        <img src="static/images/hamburg.png" id="ham">
+        <img src="static/images/x.png" id="cancel">
+    </label>
+    <div class="sidebar">
+        <header>MENU</header>
+        <ul>
+            <li><a href="index.html"><span>Home</span></a></li>
+            <li><a href="about.html"><span>About</span></a></li>
+            <li><a href="scoreboard.html"><span>Scoreboard</span></a></li>
+            <li><a href="activities.html"><span>Activities</span></a></li>
+            <li><a href="gallery.html"><span>Gallery</span></a></li>
+        </ul>
+    </div>
+
+<div class="mainbody">
+    <div class='header-wrapper'>
+        <div class='header'>
+            <a href="index.html" class='uc'>
+                <img src="static/images/uncharted.png" alt="" class='uncharted'>
             </a>
-            </div>
         </div>
     </div>
-    </body>
+
+</div>
+</body>
 </html>
