@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+}
+
+.profile-wrapper {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 30px;
+}
+
+.spacing-mascot {
+    width: 100%;
+    height: 175px;
+}
+
+
+
+.profile-content-wrapper {
+    width: 100%;
+    height: auto;
+    border: 3px solid black;
+    padding: 20px 0;
+}
+
+.profile-content-wrapper h1 {
+    font-family: 'Permanent Marker', cursive;
+    color: rgb(29, 29, 112);
+    margin: 0 auto;
+    text-align: center;
+    font-size: 5em;
+    letter-spacing: 2px;
+}
+
+#vibria-content {
+    background-color: rgb(90, 124, 199);
+}
+
+.profile-space {
+    clear: both;
+    height: 20px;
+    width: 100%;
+}
+
+.profile-content {
+    width: 80%;
+    height: auto;
+    padding: 10px;
+    text-align: left;
+    margin: 0 auto;
+    font-family: 'Indie Flower', cursive;
+    line-height: 1.4em;
+    letter-spacing: 1px;
+    font-size: 2em;
+    font-weight: 900;
+}
+
+.floating-space {
+    width: 30%;
+    height: 1px;
+    float: left;
+}
+
+.profile-wrapper #mascot {
+    float: left;
+    width: 40%;
+    height: 30vw;
+    border: 3px solid black;
+    padding: 10px;
+    background-color: white;
+}
+
+
+.profile-photo-wrapper {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    clear: both;
+}
+
+.profile-photo-wrapper h1 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 3em;
+    color: rgb(29, 29, 112);
+    padding: 1em 0;
+    text-decoration: underline;
+}
+
+.profile-photos-float {
+    width: 100%;
+}
+
+.profile-photo-box {
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+.profile-photo-box img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 10px auto;
+    padding: 10px;
+    border: 3px solid black;
+    display: inline-block;
+}
+
+.profile-photo-box div {
+    text-align: center;
+    padding: 2px;
+    width: 80%;
+    margin: 0 auto;
+    font-family: 'Indie Flower', cursive;
+}
+
+.role {
+    font-weight: 1000;
+    font-size: 2em;
+}
+
+.name {
+    font-weight: 600;
+    font-size: 1.8em;
+}
+
+.spacing-profile-photo {
+    clear: both;
+    height: 100px;
+    width: 100%;
+}

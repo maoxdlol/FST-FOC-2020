@@ -1,8 +1,31 @@
 * {
-    padding: 0; /* always good to blanket set this */
+    padding: 0; /* IMPT to remove list indent */
     margin:0;
     text-decoration: none;
     box-sizing: border-box;
+}
+
+@media (min-width:1000px) {
+    .sidebar ul a , .sidebar header{
+        font-size: 2vw;
+    }
+
+    label #ham, label #cancel {
+        width: 3vw;
+        height: 3vw;
+    }
+}
+
+@media (max-width: 999px) {
+    .sidebar ul a , .sidebar header{
+        font-size: 2.5vh;
+    }
+
+    label #ham, label #cancel {
+        width: 3vh;
+        height: 3vh;
+    }
+
 }
 
 .sidebar {
@@ -17,7 +40,6 @@
 }
 
 .sidebar header {
-    font-size: 20px;
     height: 25vh; /**/
     line-height: 25vh; /* center text vert */
     text-align: center; /**/
@@ -36,6 +58,7 @@
     border-top: 0.5px solid rgb(194, 194, 194);
     border-bottom: 1px solid black;
     transition: 0.5s; /* all transition timings same */
+    
 }
 
 li {
@@ -55,8 +78,8 @@ li {
 /* menu toggle/close buttons */
 label #ham, label #cancel {
     cursor: pointer;/**/
-    width: 30px;/**/
-    height: 30px;/**/
+    /*width: 3vh;*/
+    /*height: 3vh; placed in media for now*/
     position: fixed;/* for menu to follow u, absolute if menu at top only */
     z-index: 999; /**/
 }
@@ -70,7 +93,7 @@ label #ham {
 
 label #cancel {
     left: 20px; 
-    top: -100px; /* close button on left of viewport: HIDDEN */
+    top: -10vw; /* close button on left of viewport: HIDDEN */
     transition: all 0.5s ease;
 }
 
